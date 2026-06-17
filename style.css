@@ -2567,3 +2567,26 @@ section { padding: 7rem 0; }
         animation-iteration-count: 1 !important;
     }
 }
+
+/* ============================================================
+   GALLERY VIEW MORE BUTTON
+   ============================================================ */
+.gallery-view-more {
+    text-align: center;
+    margin-top: 3.5rem;
+    position: relative;
+    z-index: 10;
+}
+.gallery-view-more .cta-button {
+    border-color: rgba(201, 148, 42, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--white);
+    padding: 0.9rem 2.2rem;
+    font-size: 0.95rem;
+}
+.gallery-view-more .cta-button:hover {
+    background: var(--grad-gold);
+    color: var(--text-dark);
+    border-color: transparent;
+    box-shadow: var(--shadow-gold);
+}

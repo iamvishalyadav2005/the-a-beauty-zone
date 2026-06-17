@@ -331,9 +331,59 @@ if (heroStats) {
 
 
 // ========================================
-// 10. GALLERY FILTER TABS
+// 10. GALLERY FILTER TABS & LIMITS
 // ========================================
 const filterBtns = document.querySelectorAll('.filter-btn');
+const viewAllBtnWrap = document.querySelector('.gallery-view-more');
+const viewAllBtn = document.getElementById('galleryViewAllBtn');
+const INITIAL_LIMIT = 6;
+let isAllExpanded = false;
+
+function updateGalleryFilter(filterName) {
+    let visibleCount = 0;
+
+    galleryItems.forEach(item => {
+        const category = item.getAttribute('data-category');
+        
+        // Determine if this item matches the category filter
+        const matchesCategory = (filterName === 'all' || category === filterName);
+        
+        // If 'all' is selected and we haven't clicked 'View All', limit to INITIAL_LIMIT
+        let shouldShow = matchesCategory;
+        if (filterName === 'all' && !isAllExpanded) {
+            if (matchesCategory) {
+                visibleCount++;
+                if (visibleCount > INITIAL_LIMIT) {
+                    shouldShow = false;
+                }
+            }
+        }
+
+        if (shouldShow) {
+            item.style.display = '';
+            setTimeout(() => {
+                item.style.opacity   = '1';
+                item.style.transform = 'scale(1)';
+            }, 10);
+        } else {
+            item.style.opacity   = '0';
+            item.style.transform = 'scale(0.92)';
+            setTimeout(() => { item.style.display = 'none'; }, 350);
+        }
+    });
+
+    // Control visibility of "View All" button
+    if (viewAllBtnWrap) {
+        if (filterName === 'all' && !isAllExpanded && galleryItems.length > INITIAL_LIMIT) {
+            viewAllBtnWrap.style.display = 'block';
+        } else {
+            viewAllBtnWrap.style.display = 'none';
+        }
+    }
+}
+
+// Initial filter apply on page load
+updateGalleryFilter('all');
 
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -342,25 +392,17 @@ filterBtns.forEach(btn => {
         btn.classList.add('active');
 
         const filter = btn.getAttribute('data-filter');
-
-        galleryItems.forEach(item => {
-            const category = item.getAttribute('data-category');
-            const show = filter === 'all' || category === filter;
-
-            if (show) {
-                item.style.display = '';
-                setTimeout(() => {
-                    item.style.opacity   = '1';
-                    item.style.transform = 'scale(1)';
-                }, 10);
-            } else {
-                item.style.opacity   = '0';
-                item.style.transform = 'scale(0.92)';
-                setTimeout(() => { item.style.display = 'none'; }, 350);
-            }
-        });
+        updateGalleryFilter(filter);
     });
 });
+
+// View All Button handler
+if (viewAllBtn) {
+    viewAllBtn.addEventListener('click', () => {
+        isAllExpanded = true;
+        updateGalleryFilter('all');
+    });
+}
 
 // Smooth transition on gallery items
 galleryItems.forEach(item => {

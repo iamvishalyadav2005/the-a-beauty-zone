@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The A Beauty Zone - Premium Beauty Salon in Bharthana, Etawah. Bridal makeup, hair styling, skincare, and complete beauty solutions by Anjali Yadav.">
+    <meta name="keywords"
+        content="beauty salon, bridal makeup, hair styling, Bharthana, Etawah, Anjali Yadav, The A Beauty Zone">
+    <meta name="author" content="Vishal Yadav">
+
+    <!-- Open Graph (WhatsApp / Facebook preview) -->
+    <meta property="og:title" content="The A Beauty Zone - Enhancing Your Natural Beauty">
+    <meta property="og:description" content="Premium Beauty Salon in Bharthana, Etah. Book your transformation today!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="pictures/Bridalpicture.png">
+
+    <title>The A Beauty Zone - Enhancing Your Natural Beauty</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== PRELOADER ========== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <span class="logo-gradient">The A</span> Beauty Zone
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+            <p class="preloader-text">Enhancing Your Natural Beauty...</p>
+        </div>
+    </div>
+
+    <!-- ========== FLOATING PARTICLES ========== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-gradient">The A</span> Beauty Zone
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="https://wa.me/919068627808" class="nav-book-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Book Now
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero">
+        <div class="hero-bg-overlay"></div>
+
+        <!-- Decorative floating petals -->
+        <div class="petal petal-1">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C12 2 16.5 7.5 19.5 11C22.5 14.5 21.5 18 19 20C16.5 22 13.5 21 11 18.5C8.5 16 3.5 12 3.5 12C3.5 12 8.5 10.5 11 7.5C13.5 4.5 12 2 12 2Z"/></svg>
+        </div>
+        <div class="petal petal-2">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L15 9L24 12L15 15L12 24L9 15L0 12L9 9Z"/></svg>
+        </div>
+        <div class="petal petal-3">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C12 2 7.5 7.5 4.5 11C1.5 14.5 2.5 18 5 20C7.5 22 10.5 21 13 18.5C15.5 16 20.5 12 20.5 12C20.5 12 15.5 10.5 13 7.5C10.5 4.5 12 2 12 2Z"/></svg>
+        </div>
+        <div class="petal petal-4">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 0L8.5 5L14 6.5L8.5 8L7 13L5.5 8L0 6.5L5.5 5ZM18 10L19 13.5L23 14.5L19 15.5L18 19L17 15.5L13 14.5L17 13.5Z"/></svg>
+        </div>
+        <div class="petal petal-5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C12 3 15.5 8 18 11C20.5 14 19.5 17 17.5 18.5C15.5 20 13 19 11 17C9 15 5 12.5 5 12.5C5 12.5 9 11 11 8.5C13 6 12 3 12 3Z"/></svg>
+        </div>
+
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+            <div class="hero-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span>Welcome to Premium Beauty</span>
+                <span class="eyebrow-line"></span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="gradient-text script-font">The A</span>
+            
+                <span class="hero-title-main">Beauty Zone</span>
+            </h1>
+
+            <p class="hero-desc">✨ Enhancing Your Natural Beauty ✨</p>
+            <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Sati Mandir, Bharthana, Etawah, UP</p>
+
+            <div class="hero-buttons">
+                <a href="https://wa.me/919068627808" class="cta-button primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                </a>
+                <a href="#services" class="cta-button secondary">
+                    <i class="fas fa-magic"></i> Explore Services
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+            <div class="stat">
+                <!-- <span class="stat-number" data-target="3">0</span> -->
+                <span class="stat-suffix">4+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number" data-target="1500">0</span><span class="stat-suffix">1200+</span>
+                <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat satisfaction">
+                <span class="stat-number" data-target="100">0</span><span class="stat-suffix">99%</span>
+                <span class="stat-label">Satisfaction</span>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll to Explore</span>
+        </div>
+
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- ========== ANNOUNCEMENT STRIP ========== -->
+    <div class="announcement-strip">
+        <div class="strip-track">
+            <span>✨ Bridal Packages Available</span>
+            <span class="strip-dot">💎</span>
+            <span>Premium Skincare Treatments</span>
+            <span class="strip-dot">🌸</span>
+            <span>Hair Styling &amp; Coloring</span>
+            <span class="strip-dot">💅</span>
+            <span>Manicure &amp; Pedicure Spa</span>
+            <span class="strip-dot">✨</span>
+            <span>Bridal Packages Available</span>
+            <span class="strip-dot">💎</span>
+            <span>Premium Skincare Treatments</span>
+            <span class="strip-dot">🌸</span>
+            <span>Hair Styling &amp; Coloring</span>
+            <span class="strip-dot">💅</span>
+            <span>Manicure &amp; Pedicure Spa</span>
+            <span class="strip-dot">✨</span>
+        </div>
+    </div>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Story</span>
+                <h2 class="section-title gradient-text">About The A Beauty Zone</h2>
+                <p class="section-desc">Where passion meets perfection — your beauty is our masterpiece</p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left: Content -->
+                <div class="about-content enhanced" data-aos="fade-right" data-aos-delay="200">
+
+                    <div class="about-text-content">
+                        <p class="about-lead">
+                            Welcome to <strong>The A Beauty Zone</strong> — your trusted beauty destination in Bharthana
+                            with
+                            <strong>3+ years</strong> of excellence in professional beauty and grooming.
+                        </p>
+                        <p>We specialize in <strong>bridal makeup</strong>, <strong>hair styling</strong>,
+                            <strong>skincare</strong>, and complete makeover solutions — crafted to enhance your natural
+                            beauty
+                            and make every occasion unforgettable.
+                        </p>
+                    </div>
+
+                    <!-- Owner Profile Card -->
+                    <!-- Owner Profiles -->
+<div class="owners-wrap">
+
+    <!-- Anjali Yadav — existing card, just wrapped -->
+    <div class="owner-profile" data-aos="zoom-in" data-aos-delay="300">
+        <div class="owner-image-wrap">
+            <img src="pictures/ownerimage1.png" alt="Anjali Yadav - Founder & Lead Artist"
+                onerror="this.src='https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80'">
+            <div class="owner-status">👑 Founder & Lead Artist</div>
+        </div>
+        <div class="owner-details">
+            <span class="owner-eyebrow">Meet Our Founder</span>
+            <h3>Anjali Yadav</h3>
+            <p class="owner-bio">
+                With <strong>4+ years of expertise</strong> in the beauty industry, Anjali brings passion, creativity, and precision to every client transformation. Specializing in bridal makeup artistry and advanced hair styling techniques, she is dedicated to enhancing natural beauty while delivering elegant, personalized looks for every occasion.
+            </p>
+            <div class="owner-stats">
+                <div class="owner-stat"><strong>70+</strong><span>Weddings</span></div>
+                <div class="owner-stat"><strong>1500+</strong><span>Clients</span></div>
+                <div class="owner-stat"><strong>100%</strong><span>Satisfaction</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Co-Partner Card — NEW -->
+    <div class="owner-profile" data-aos="zoom-in" data-aos-delay="450">
+        <div class="owner-image-wrap">
+            <img src="pictures/ownerimage.jpg" alt="Aansi Yadav - Co-Partner"
+                onerror="this.src='https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&q=80'">
+            <div class="owner-status">💼 Co-Partner</div>
+        </div>
+        <div class="owner-details">
+            <span class="owner-eyebrow">Meet Our Co-Partner</span>
+            <h3>Aansi Yadav</h3>
+            <p class="owner-bio">
+                With <strong>2+ years</strong> of experience in the beauty industry, Aansi brings dedication, creativity, and excellent client care to every service. Skilled in beauty treatments, customer satisfaction, and salon management, she plays a key role in delivering a smooth and welcoming experience at The A Beauty Zone.
+            </p>
+            <div class="owner-stats">
+                <div class="owner-stat"><strong>30+</strong><span>Weddings</span></div>
+                <div class="owner-stat"><strong>900+</strong><span>Clients</span></div>
+                <div class="owner-stat"><strong>2+</strong><span>Years</span></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+                    <!-- Features -->
+                    <div class="about-features">
+                        <div class="feature-highlight">
+                            <div class="feature-icon-wrap"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <strong>Hygiene First</strong>
+                                <span>Sanitized tools &amp; premium products</span>
+                            </div>
+                        </div>
+                        <div class="feature-highlight">
+                            <div class="feature-icon-wrap"><i class="fas fa-star"></i></div>
+                            <div>
+                                <strong>Expert Artists</strong>
+                                <span>Certified &amp; trained professionals</span>
+                            </div>
+                        </div>
+                        <div class="feature-highlight">
+                            <div class="feature-icon-wrap"><i class="fas fa-heart"></i></div>
+                            <div>
+                                <strong>Personalized Care</strong>
+                                <span>Every look crafted just for you</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="cta-button secondary about-cta">
+                        <i class="fas fa-calendar-check"></i>
+                        Book With Anjali Yadav
+                    </a>
+                </div>
+
+                <!-- Right: Visual -->
+                <div class="about-visual" data-aos="fade-left" data-aos-delay="400">
+                    <div class="about-image-stack">
+                        <div class="main-image">
+                            <img src="pictures/ownerimage1.png" alt="The A Beauty Zone Salon">
+                            <div class="image-overlay">
+                                <div class="experience-badge">
+                                    <div class="badge-circle">3+</div>
+                                    <div class="badge-text">Years Experience</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title gradient-text">Our Premium Services</h2>
+                <p class="section-desc">From everyday glam to once-in-a-lifetime bridal looks</p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-bg"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Hair Styling</h3>
+                    <p>Professional cuts, coloring, keratin treatments &amp; bridal updos. Perfect for every occasion.
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Haircut &amp; Trim</li>
+                        <li><i class="fas fa-check"></i> Coloring &amp; Highlights</li>
+                        <li><i class="fas fa-check"></i> Bridal Updos</li>
+                    </ul>
+                    <div class="service-price">Starting ₹500</div>
+                    <a href="https://wa.me/919068627808?text=Hi! I'd like to book Hair Styling" class="service-book-btn"
+                        target="_blank">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card popular" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-bg"></div>
+                    <div class="popular-badge">⭐ Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Facial &amp; Skincare</h3>
+                    <p>Deep cleansing, peels, brightening &amp; anti-aging treatments. Glow from within.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Deep Cleansing Facial</li>
+                        <li><i class="fas fa-check"></i> Brightening Peel</li>
+                        <li><i class="fas fa-check"></i> Anti-Aging Treatment</li>
+                    </ul>
+                    <div class="service-price">Starting ₹800</div>
+                    <a href="https://wa.me/919068627808?text=Hi! I'd like to book a Facial" class="service-book-btn"
+                        target="_blank">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-bg"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Bridal Makeup</h3>
+                    <p>Long-lasting, customized bridal looks for your most special day. Look &amp; feel like royalty.
+                    </p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Bridal Full Makeup</li>
+                        <li><i class="fas fa-check"></i> Engagement Look</li>
+                        <li><i class="fas fa-check"></i> Haldi &amp; Mehendi</li>
+                    </ul>
+                    <div class="service-price">Starting ₹3,000</div>
+                    <a href="https://wa.me/919068627808?text=Hi! I'd like to book Bridal Makeup"
+                        class="service-book-btn" target="_blank">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-bg"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>Manicure &amp; Pedicure</h3>
+                    <p>Premium nail care with spa treatments, nail art &amp; gel finishes.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Classic Manicure</li>
+                        <li><i class="fas fa-check"></i> Spa Pedicure</li>
+                        <li><i class="fas fa-check"></i> Nail Art &amp; Gel</li>
+                    </ul>
+                    <div class="service-price">Starting ₹400</div>
+                    <a href="https://wa.me/919068627808?text=Hi! I'd like to book Manicure/Pedicure"
+                        class="service-book-btn" target="_blank">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card-bg"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Party Makeup</h3>
+                    <p>Glamorous, long-lasting party &amp; event makeup that keeps you glowing all night.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Full Face Makeup</li>
+                        <li><i class="fas fa-check"></i> Eye &amp; Lip Art</li>
+                        <li><i class="fas fa-check"></i> Setting &amp; Finish</li>
+                    </ul>
+                    <div class="service-price">Starting ₹1,000</div>
+                    <a href="https://wa.me/919068627808?text=Hi! I'd like to book Party Makeup" class="service-book-btn"
+                        target="_blank">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card-bg"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Waxing &amp; Threading</h3>
+                    <p>Smooth, precise, and gentle hair removal using premium quality wax and threads.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Full Body Waxing</li>
+                        <li><i class="fas fa-check"></i> Eyebrow Threading</li>
+                        <li><i class="fas fa-check"></i> Upper Lip &amp; Face</li>
+                    </ul>
+                    <div class="service-price">Starting ₹100</div>
+                    <a href="https://wa.me/919068627808?text=Hi! I'd like to book Waxing/Threading"
+                        class="service-book-btn" target="_blank">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALLERY SECTION ========== -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title gradient-text">Stunning Transformations</h2>
+                <p class="section-desc">Every look tells a unique story of beauty and confidence</p>
+            </div>
+
+            <!-- Gallery Filter Tabs -->
+            <div class="gallery-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="hair">Hair</button>
+                <button class="filter-btn" data-filter="party">Party</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="pictures/Bridalpicture.png" alt="Bridal Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Bridal Glam</h4>
+                            <span>Bridal Makeup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="pictures/BridalMakup2.png" alt="Bridal Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=8'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Bridal Glam</h4>
+                            <span>Bridal Makeup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="pictures/BridalMakeup6.webp" alt="Bridal Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=8'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Bridal Glam</h4>
+                            <span>Bridal Makeup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="pictures/BridalMakeup7.webp" alt="Bridal Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=8'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Bridal Glam</h4>
+                            <span>Bridal Makeup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="pictures/Bridal makeup 8.webp" alt="Bridal Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=8'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Bridal Glam</h4>
+                            <span>Bridal Makeup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="pictures/Bridal makeup 9.webp" alt="Bridal Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=8'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Bridal Glam</h4>
+                            <span>Bridal Makeup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="pictures/Bridal makeup 10.webp" alt="Bridal Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=8'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Bridal Glam</h4>
+                            <span>Bridal Makeup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="pictures/Bridal1.webp" alt="Bridal Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=8'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Bridal Glam</h4>
+                            <span>Bridal Makeup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="pictures/bridal2.webp" alt="Bridal Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=8'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Bridal Glam</h4>
+                            <span>Bridal Makeup</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="pictures/haldipicture.png" alt="Haldi Look"
+                        onerror="this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Haldi Magic</h4>
+                            <span>Haldi Ceremony</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="pictures/Haldimakeup2.jpg" alt="Haldi Look"
+                        onerror="this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Haldi Magic</h4>
+                            <span>Haldi Ceremony</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="pictures/HaldiMakeup3.jpg" alt="Haldi Look"
+                        onerror="this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Haldi Magic</h4>
+                            <span>Haldi Ceremony</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hair" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1622298539826-29b8e8fbcb69?w=800&q=80" alt="Hairstyle">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Hairstyle Art</h4>
+                            <span>Hair Styling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bridal" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="pictures/Engagementpicture.jpg" alt="Engagement Look"
+                        onerror="this.src='https://images.unsplash.com/photo-1610173827889-8dcce8e8f99e?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Wedding Glow</h4>
+                            <span>Engagement Makeup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="party" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="pictures/partypicture.png" alt="Party Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Party Glam</h4>
+                            <span>Party Makeup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="party" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="pictures/PartyMakeup1.png" alt="Party Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Party Glam</h4>
+                            <span>Party Makeup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="party" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="pictures/PartyMakeup3.jpeg" alt="Party Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Party Glam</h4>
+                            <span>Party Makeup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="party" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="pictures/partyMakeup2.jpg" alt="Party Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Party Glam</h4>
+                            <span>Party Makeup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="party" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="pictures/partyMakeup4.jpeg" alt="Party Makeup"
+                        onerror="this.src='https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Party Glam</h4>
+                            <span>Party Makeup</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item" data-category="hair" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://images.unsplash.com/photo-1556228573-98e64d7591e6?w=800&q=80" alt="Hair Styling">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <i class="fas fa-expand-alt"></i>
+                            <h4>Hair Perfection</h4>
+                            <span>Hair Treatment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LIGHTBOX (hidden by default) ========== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+        <button class="lightbox-next" id="lightboxNext" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Happy Clients</span>
+                <h2 class="section-title gradient-text">What Our Clients Say</h2>
+                <p class="section-desc">Real stories from real beauties ✨</p>
+            </div>
+
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonials-track" id="testimonialsTrack">
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Anjali di ne meri bridal makeup itni sundar ki thi! Sab logo ne
+                            bahut tarif ki. The A Beauty Zone is the best salon in Bharthana!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop&q=80" alt="Priya Sharma">
+                            </div>
+                            <div>
+                                <strong>Priya Sharma</strong>
+                                <span>Bridal Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Best facial I have ever had! My skin is glowing now. Very hygienic
+                            salon and Anjali ji is so professional and caring."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&q=80" alt="Sunita Verma">
+                            </div>
+                            <div>
+                                <strong>Sunita Verma</strong>
+                                <span>Skincare Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"My engagement makeup was absolutely perfect! Got so many
+                            compliments. Highly recommend The A Beauty Zone to all brides-to-be!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=120&h=120&fit=crop&q=80" alt="Ritu Yadav">
+                            </div>
+                            <div>
+                                <strong>Ritu Yadav</strong>
+                                <span>Engagement Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Hair color aur cut dono bahut achhe hue! Very reasonable prices and
+                            very friendly staff. Will definitely come back again and again!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop&q=80" alt="Meena Gupta">
+                            </div>
+                            <div>
+                                <strong>Meena Gupta</strong>
+                                <span>Hair Styling Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Party makeup for my cousin's wedding was stunning! Anjali ji
+                            understood exactly what I wanted. She is truly talented and creative!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&h=120&fit=crop&q=80" alt="Kavita Singh">
+                            </div>
+                            <div>
+                                <strong>Kavita Singh</strong>
+                                <span>Party Makeup Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn" id="sliderPrev" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn" id="sliderNext" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Why Us</span>
+                <h2 class="section-title gradient-text">Why Choose The A Beauty Zone?</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-icon">💆‍♀️</div>
+                    <h4>Expert Professionals</h4>
+                    <p>Certified, trained, and passionate beauty artists dedicated to your transformation.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-icon">🌿</div>
+                    <h4>Premium Products</h4>
+                    <p>We only use top-quality, skin-safe products for all our treatments.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-icon">🧴</div>
+                    <h4>Hygienic Standards</h4>
+                    <p>Fully sanitized tools and workspace — your safety is our priority.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-icon">💸</div>
+                    <h4>Affordable Prices</h4>
+                    <p>Premium beauty experience at prices that won't break the bank.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title gradient-text">Ready to Glow? ✨</h2>
+                <p class="section-desc">Book your appointment today — walk in beautiful, walk out stunning</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Book Your Transformation</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <a href="tel:+919068627808" class="contact-link">+91 9068627808</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon whatsapp-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/919068627808" class="whatsapp-btn" target="_blank">
+    
+                                <i class="fab fa-whatsapp"></i> Chat Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon – Sat: 9:00 AM – 8:00 PM</p>
+                            <p>Sunday: 10:00 AM – 6:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Sati Mandir, Bharthana<br>Etawah, Uttar Pradesh 207001</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <h4>Follow Our Journey</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/miss____anjali____yadav/" class="social-btn instagram"
+                                target="_blank" rel="noopener" title="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/theabeautyzone" class="social-btn facebook"
+                                target="_blank" rel="noopener" title="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/919068627808" class="social-btn whatsapp" target="_blank"
+                                rel="noopener" title="WhatsApp">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrap" data-aos="fade-left">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Priya Sharma" required>
+                                <i class="fas fa-user form-icon"></i>
+                                <span class="form-error" id="nameError">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 98765 ....." required>
+                                <i class="fas fa-phone form-icon"></i>
+                                <span class="form-error" id="phoneError">Please enter a valid phone number</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="priya@example.com">
+                            <i class="fas fa-envelope form-icon"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a Service</option>
+                                <option value="Bridal Makeup">💍 Bridal Makeup</option>
+                                <option value="Hair Styling">✂️ Hair Styling</option>
+                                <option value="Facial & Skincare">🧴 Facial & Skincare</option>
+                                <option value="Party Makeup">✨ Party Makeup</option>
+                                <option value="Manicure & Pedicure">💅 Manicure & Pedicure</option>
+                                <option value="Waxing & Threading">🌿 Waxing & Threading</option>
+                                <option value="Other">💬 Other</option>
+                            </select>
+                            <i class="fas fa-spa form-icon"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                                placeholder="Tell us about your requirements, preferred date/time..."
+                                rows="4"></textarea>
+                            <i class="fas fa-comment form-icon textarea-icon"></i>
+                        </div>
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text"><i class="fab fa-whatsapp"></i> Send via WhatsApp</span>
+                            <span class="btn-loading" style="display:none"><i class="fas fa-spinner fa-spin"></i>
+                                Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="map-section" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="map-title"><i class="fas fa-map-marker-alt"></i> Find Us Here</h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.602783232258!2d79.23594547521867!3d26.757049076740252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397607e3f65539c7%3A0x3ce61164a5da5777!2sThe%20A%20Beauty%20Zone!5e0!3m2!1sen!2sin!4v1777833593709!5m2!1sen!2sin"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="The A Beauty Zone Location - Bharthana, Etawah">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <span class="logo-gradient">The A</span> Beauty Zone
+                    </div>
+                    <p class="footer-tagline">✨ Premium Beauty Salon | Bharthana, Etawah, UP ✨</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/miss____anjali____yadav/" target="_blank"
+                            class="footer-social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/theabeautyzone" target="_blank" class="footer-social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/9068627808" target="_blank" class="footer-social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Our Services</h5>
+                        <ul>
+                            <li><a href="#services">Bridal Makeup</a></li>
+                            <li><a href="#services">Hair Styling</a></li>
+                            <li><a href="#services">Facial & Skincare</a></li>
+                            <li><a href="#services">Party Makeup</a></li>
+                            <li><a href="#services">Manicure & Pedicure</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Contact Info</h5>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +91 9068627808</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Sati Mandir, Bharthana</li>
+                            <li><i class="fas fa-map-pin"></i> Etawah, UP 206242</li>
+                            <li><i class="fas fa-clock"></i> Mon–Sat: 9AM–8PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 The A Beauty Zone. All rights reserved.</p>
+                <div class="developer-credit">
+                    <i class="fas fa-code"></i>
+                    <span>Crafted with ❤️ by</span>
+                    <strong>Vishal Yadav</strong>
+                    <span class="dev-title">· Full-Stack Developer</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING WHATSAPP BUTTON ========== -->
+    <a href="https://wa.me/919068627808?text=Hi! I'd like to book an appointment at The A Beauty Zone."
+        class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tooltip">Book Now!</span>
+    </a>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ========== TOAST NOTIFICATION ========== -->
+    <div class="toast" id="toast" role="alert" aria-live="polite">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Message sent!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

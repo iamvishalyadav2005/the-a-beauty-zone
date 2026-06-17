@@ -1,0 +1,551 @@
+/* ============================================================
+   THE A BEAUTY ZONE — MOBILE RESPONSIVE FIXES
+   Add this at the very bottom of style.css
+   (or <link> it after style.css in index.html)
+   ============================================================ */
+
+/* ── 1. HERO SECTION ──────────────────────────────────────── */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 7rem 1.2rem 5rem;
+        min-height: 100dvh;           /* use dvh so address bar doesn't cut content */
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+
+    .hero-content {
+        padding: 0;
+        text-align: center;
+    }
+
+    .hero-eyebrow {
+        font-size: 0.72rem;
+        gap: 0.6rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .eyebrow-line { width: 28px; }
+
+    .hero-title {
+        font-size: clamp(2.8rem, 11vw, 4.5rem);
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    .script-font { font-size: 0.6em; }
+
+    .hero-desc {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-location {
+        font-size: 0.82rem;
+        margin-bottom: 1.8rem;
+    }
+
+    /* Buttons: stack on very small screens, side-by-side otherwise */
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.85rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+        padding: 0.95rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    /* Stats bar — keep 3 cols but shrink */
+    .hero-stats {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 1.2rem 1rem;
+        margin-top: 2.5rem;
+        border-radius: 20px;
+        gap: 0;
+        width: 100%;
+    }
+
+    .stat { padding: 0 0.6rem; }
+
+    .stat-number,
+    .stat-suffix {
+        font-size: clamp(1.1rem, 5vw, 1.6rem);
+    }
+
+    .stat-label {
+        font-size: 0.62rem;
+        letter-spacing: 0.06em;
+    }
+
+    .stat-divider { height: 32px; }
+
+    /* Hide scroll indicator on mobile to save space */
+    .scroll-indicator { display: none; }
+
+    /* Petals — reduce so they don't crowd */
+    .petal-3, .petal-4, .petal-5 { display: none; }
+}
+
+@media (max-width: 400px) {
+    .hero-stats { gap: 0; }
+    .stat { padding: 0 0.35rem; }
+    .stat-label { font-size: 0.55rem; }
+    .stat-suffix,
+    .stat-number { font-size: 1rem; }
+}
+
+/* ── 2. NAVBAR ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+
+    .nav-container {
+        padding: 0 1.2rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    /* Mobile drawer */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(82vw, 320px);
+        height: 100vh;
+        height: 100dvh;
+        background: var(--white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5.5rem 2rem 2.5rem;
+        gap: 0.2rem;
+        box-shadow: -8px 0 40px rgba(0,0,0,0.18);
+        transition: right 0.4s cubic-bezier(0.4,0,0.2,1);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    .nav-links.active { right: 0; }
+
+    .nav-link {
+        color: var(--text-body) !important;
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background: var(--rose-petal);
+        color: var(--rose-deep) !important;
+    }
+
+    .nav-link::after { display: none; }
+
+    .nav-book-btn {
+        margin: 0.8rem 0 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ── 3. ABOUT SECTION ─────────────────────────────────────── */
+@media (max-width: 1024px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    /* Move visual below content on tablet */
+    .about-visual { order: -1; }
+
+    .main-image {
+        height: 380px;
+        border-radius: 190px 190px 16px 16px;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .image-overlay {
+        padding: 1rem;
+    }
+
+    .badge-circle {
+        width: 52px;
+        height: 52px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-visual { order: -1; }
+
+    .main-image {
+        height: 300px;
+        border-radius: 150px 150px 12px 12px;
+        max-width: 280px;
+    }
+
+    /* Owner cards — keeping horizontal format similar to PC */
+    .owner-profile {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 1rem;
+        padding: 1.2rem;
+        text-align: left;
+        align-items: start;
+    }
+
+    .owner-image-wrap {
+        display: block;
+    }
+
+    .owner-image-wrap img {
+        width: 90px !important;
+        height: 115px !important;
+        border-radius: 45px 45px 8px 8px;
+    }
+
+    .owner-status {
+        position: absolute;
+        bottom: -9px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.6rem;
+        padding: 0.25rem 0.5rem;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    .owner-details {
+        width: 100%;
+    }
+
+    .owner-details h3 {
+        font-size: 1.15rem;
+        text-align: left;
+        margin-bottom: 0.3rem;
+    }
+
+    .owner-eyebrow { text-align: left; }
+
+    .owner-bio {
+        font-size: 0.78rem;
+        text-align: left;
+        line-height: 1.55;
+        margin-bottom: 0.5rem;
+    }
+
+    .owner-stats {
+        justify-content: start;
+        gap: 0.5rem;
+    }
+
+    /* Feature highlights */
+    .about-features {
+        gap: 0.75rem;
+    }
+
+    .feature-highlight {
+        padding: 0.85rem 1.1rem;
+    }
+
+    .about-cta {
+        align-self: center;
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+    }
+
+    .about-text-content p,
+    .about-lead {
+        text-align: center;
+    }
+}
+
+/* ── 4. SERVICES ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .service-card {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .service-book-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    /* 2-col services on larger phones (landscape) */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ── 5. GALLERY ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .gallery-item {
+        height: 200px;
+        border-radius: 14px;
+    }
+
+    /* Reset span overrides that cause mismatches */
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(4) {
+        height: 200px;
+        grid-row: span 1;
+    }
+
+    .gallery-filters {
+        gap: 0.45rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .filter-btn {
+        padding: 0.45rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-item { height: 240px; }
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(4) {
+        height: 240px;
+    }
+}
+
+/* ── 6. TESTIMONIALS ──────────────────────────────────────── */
+@media (max-width: 768px) {
+
+    .testimonials-track {
+        gap: 1rem;
+    }
+
+    .testimonial-card {
+        min-width: calc(90vw - 2.4rem);
+        padding: 1.8rem 1.4rem;
+    }
+
+    .slider-controls { margin-top: 1.5rem; }
+}
+
+/* ── 7. WHY SECTION ───────────────────────────────────────── */
+@media (max-width: 768px) {
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .why-card {
+        padding: 1.8rem 1.2rem;
+    }
+
+    .why-icon { font-size: 2.2rem; }
+}
+
+@media (max-width: 400px) {
+    .why-grid { grid-template-columns: 1fr; }
+}
+
+/* ── 8. CONTACT SECTION ───────────────────────────────────── */
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contact-form-wrap {
+        padding: 1.8rem 1.2rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-item {
+        padding: 1.1rem;
+        gap: 1rem;
+    }
+
+    .contact-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+        flex-shrink: 0;
+    }
+
+    .social-btn {
+        width: 46px;
+        height: 46px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
+
+/* ── 9. FOOTER ────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .footer-links-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 4rem 0 0;
+    }
+
+    .footer-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .footer-logo { font-size: 1.5rem; }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.6rem;
+        padding: 1.4rem 0;
+    }
+
+    .developer-credit {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-links-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── 10. FLOATING BUTTONS ─────────────────────────────────── */
+@media (max-width: 768px) {
+
+    /* Bring WA button in a bit */
+    .floating-whatsapp {
+        bottom: 1.3rem;
+        left: 1.3rem;
+        width: 52px;
+        height: 52px;
+        font-size: 1.4rem;
+    }
+
+    /* Tooltip hidden on touch */
+    .wa-tooltip { display: none; }
+
+    .back-to-top {
+        bottom: 1.3rem;
+        right: 1.3rem;
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+}
+
+/* ── 11. LIGHTBOX ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+
+    .lightbox { padding: 1rem; }
+
+    .lightbox-content img {
+        max-height: 65vh;
+        border-radius: 12px;
+    }
+
+    .lightbox-prev { left: 0.5rem; }
+    .lightbox-next { right: 0.5rem; }
+
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ── 12. SECTION HEADERS ──────────────────────────────────── */
+@media (max-width: 768px) {
+
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .section-title {
+        font-size: clamp(1.9rem, 7vw, 2.8rem);
+    }
+
+    .section-desc {
+        font-size: 0.93rem;
+    }
+}
+
+/* ── 13. ANNOUNCEMENT STRIP ───────────────────────────────── */
+@media (max-width: 768px) {
+    .strip-track {
+        font-size: 0.78rem;
+    }
+    .strip-track span { margin: 0 0.9rem; }
+}
+
+/* ── 14. TOAST ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .toast {
+        width: calc(100% - 2.4rem);
+        white-space: normal;
+        text-align: center;
+        justify-content: center;
+        font-size: 0.88rem;
+        bottom: 4rem;
+    }
+}
+
+/* ── 15. GENERAL CONTAINER PADDING ────────────────────────── */
+@media (max-width: 768px) {
+    .container { padding: 0 1.2rem; }
+    section { padding: 4rem 0; }
+}
+
+@media (max-width: 400px) {
+    .container { padding: 0 1rem; }
+    section { padding: 3.5rem 0; }
+}
